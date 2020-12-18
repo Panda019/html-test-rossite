@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic");
+
+html, body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.slider_main {
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 675px !important;
+}
+
+.slider_main__intro {
+    height: 675px !important;
+    display: table;
+    width: 100%;
+    background-color: #c4cdd6;
+    position: absolute;
+    z-index: 99;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .slider_main__intro {
+        height: 400px !important;
+    }
+}
+
+.slider_main__btn {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.slider_main__btn .btn {
+    font-size: 16px;
+    background-image: none;
+    padding: 12px 30px;
+    text-shadow: none;
+    margin-right: 22px;
+    border: none;
+}
+
+.slider_main .carousel-control {
+    background-image: none;
+    width: 76px;
+}
+
+.slider_main .carousel-control.left {
+    height: 85px;
+    width: 76px;
+    top: calc(50% - 42px);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-image: url("../img/bg-thumb.png");
+    background-repeat: repeat;
+    line-height: 80px;
+    opacity: 1;
+    text-indent: -20px;
+}
+
+.slider_main .carousel-control.left:hover {
+    background-image: url("../img/bg-thumb-active.png");
+}
+
+.slider_main .carousel-control.right {
+    height: 85px;
+    width: 76px;
+    top: calc(50% - 42px);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-image: url("../img/bg-thumb.png");
+    background-repeat: repeat;
+    line-height: 80px;
+    opacity: 1;
+    text-indent: 20px;
+}
+
+.slider_main .carousel-control.right:hover {
+    background-image: url("../img/bg-thumb-active.png");
+}
+
+.slider_main .carousel-indicators {
+    position: absolute !important;
+    width: 1170px;
+    margin-left: -585px;
+    height: 67px;
+    bottom: 20px;
+}
+
+@media (max-width: 1199px) {
+    .slider_main .carousel-indicators {
+        width: 300px !important;
+        margin-left: calc(50% - 150px);
+        height: 17px;
+        left: 0px !important;
+    }
+}
+
+.slider_main .carousel-indicators_mobile {
+    width: 100%;
+    margin-left: -50%;
+}
+
+.slider_main .carousel-indicators_mobile li {
+    display: inline-block;
+    width: 14px !important;
+    height: 14px !important;
+    margin: 7px !important;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000 \9 !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: 1px solid #000 !important;
+    border-radius: 14px !important;
+    padding-left: 0px !important;
+}
+
+@media (max-width: 1199px) {
+    .slider_main .carousel-indicators_mobile li {
+        text-indent: 0px;
+        width: 14px !important;
+        height: 14px !important;
+    }
+}
+
+.slider_main .carousel-indicators_mobile li.active {
+    background-color: #000000 !important;
+}
+
+.slider_main .carousel-indicators .active {
+    height: auto;
+    background-color: transparent;
+}
+
+.slider_main .carousel-indicators li {
+    border-radius: 0;
+    width: 25%;
+    margin: 0;
+    border: none;
+    padding-left: 15px;
+    text-indent: 0px;
+}
+
+@media (max-width: 1199px) {
+    .slider_main .carousel-indicators li {
+        float: none !important;
+    }
+}
+
+.slider_main .carousel-indicators li.active .carousel-indicators__item {
+    background-image: url("../img/bg-thumb-active.png");
+}
+
+@media (max-width: 1199px) {
+    .slider_main .carousel-indicators li.active {
+        background-color: #000000;
+    }
+}
+
+@media (max-width: 1199px) {
+    .slider_main .carousel-indicators li {
+        border: 1px solid #000;
+        display: inline-block;
+        height: 17px !important;
+        width: 17px !important;
+        border-radius: 17px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+
+.slider_main .carousel-indicators__item {
+    padding: 6px;
+    border-radius: 3px;
+    height: 67px;
+    color: #ffffff;
+    background-image: url("../img/bg-thumb.png");
+}
+
+.slider_main .carousel-indicators__img {
+    width: 48px;
+    height: 55px;
+    margin-right: 9px;
+}
+
+.slider_main .carousel-indicators__img img {
+    display: block;
+    border-radius: 4px;
+}
+
+.slider_main .carousel-indicators__index {
+    color: #ffffff;
+    text-align: left;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.slider_main .carousel-indicators__index h6 {
+    color: #e8e8eb;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.slider_main .carousel-indicators__index p {
+    font-size: 12px;
+    margin: 0px;
+    line-height: 1;
+}
+
+.carousel-inner {
+    height: 675px !important;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner {
+        height: 400px !important;
+    }
+}
+
+.carousel-inner__img {
+    display: block;
+    height: 675px !important;
+    object-fit: none;
+    object-position: center;
+}
+
+@media (max-width: 1199px) {
+    .carousel-inner__img {
+        object-position: left;
+    }
+}
+
+.carousel-inner__img_mobile {
+    height: 400px !important;
+    object-fit: none;
+    object-position: center;
+}
+
+.carousel-inner h1 {
+    font-size: 40px;
+    /*padding-right: 30px;*/
+}
+
+@media (max-width: 767px) {
+    .carousel-inner h1 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+}
+
+.carousel-inner p {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+}
+
+.carousel-inner .btn {
+    font-size: 16px;
+    background-image: none;
+    padding: 12px 30px;
+    text-shadow: none;
+    margin-right: 22px;
+}
+
+.carousel-inner__index {
+    display: table;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner__desc {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media (max-width: 1199px) {
+    .carousel-inner__desc {
+        text-align: center;
+    }
+}
+
+.btn-warning {
+    background-color: #ff891e;
+}
+
+.btn-default {
+    background-color: transparent;
+    border: 1px solid #000000;
+}
+
+/*# sourceMappingURL=style.css.map */
